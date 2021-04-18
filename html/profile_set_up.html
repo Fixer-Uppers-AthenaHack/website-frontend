@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Profile.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div id="Personal-Details">
+        <form>
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lname"><br>
+        </form>
+    </div>
+    <div id="Skills">
+        <form>
+            <input type="text" placeholder="Search..." required>
+            <input type="button" value="Search">
+        </form>
+        <script>
+            $(".Skills").chosen({
+                disable_search_threshold: 10,
+                no_results_text: "Oops, nothing found!",
+                width: "95%"
+            });
+        </script>
+    </div>
+</body>
+</html>
